@@ -15,7 +15,8 @@ class ListsController < ApplicationController
 	end
 
 	def create
-		List.all.push(request.params[:title])
+		List.all.push(List.new(request.params[:title]))
+		# List.all.push(request.params[:title])
 		redirect_to "/"
 		# render json: request.params
 	end
