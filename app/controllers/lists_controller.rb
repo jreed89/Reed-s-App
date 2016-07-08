@@ -5,7 +5,9 @@ class ListsController < ApplicationController
 	end
 
 	def show
-		# render json: request.params
+		index = request.params[:list_number].to_i
+		@list = List.all[index]
+		# render text: List.all[index]
 	end
 
 	def new
