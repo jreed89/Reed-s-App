@@ -16,5 +16,5 @@ class List
 
 end
 
-myToDoList = List.new("To-Do")
-myToDoList.title
+# myToDoList = List.new("To-Do")
+# myToDoList.title

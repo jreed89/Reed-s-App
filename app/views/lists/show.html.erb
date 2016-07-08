@@ -9,4 +9,11 @@
 	<% @list.items.each do |item| %>
 	<li><%= item %></li>
 	<% end %>
+	<li>
+		<%= form_tag "#", method: :patch do %>  
+		<input type="text" name="item" placeholder="List item" />
+		<button type="submit">Add new Item</button>         
+		<% end %>
+		<!-- #send information back to the url you already on -->
+	</li>
 </ol>

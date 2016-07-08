@@ -20,4 +20,8 @@ class ListsController < ApplicationController
 		# List.all.push(List.new(request.params[:title]))
 		# render json: request.params
 	end
+	
+	def update
+		render json: request.params
+	end
 end
