@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+ console.log("when all up in it with jQuery son " + $().jquery + "!");
