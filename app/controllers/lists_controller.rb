@@ -22,6 +22,8 @@ class ListsController < ApplicationController
 	end
 	
 	def update
-		render json: request.params
+		index = request.params[:list_number].to_i
+		list = List.all[index]
+		# render json: request.params
 	end
 end
